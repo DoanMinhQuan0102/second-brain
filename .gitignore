@@ -1,0 +1,29 @@
+# Secrets — never commit
+.env
+*.key
+secrets.json
+
+# Machine-local tool state (contains local paths, not meant to be shared)
+.claude/
+
+# Large binaries that live on Drive, not in git
+*.zip
+*.msix
+*.exe
+*.pdf
+*.docx
+*.xlsx
+*.m4a
+*.mp3
+*.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Generated vault artefacts
+processed/*.html
+*.corrupt.*
