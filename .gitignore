@@ -27,3 +27,12 @@ venv/
 # Generated vault artefacts
 processed/*.html
 *.corrupt.*
+
+# Built corpora and embedding indexes.
+# Derived from the source PDFs by notebook/corpus.py, so rebuildable — and they
+# contain the full extracted text of copyrighted textbooks, which must not end
+# up in git history.
+notebooks/
+*.jsonl
+*.sqlite
+*.npy
