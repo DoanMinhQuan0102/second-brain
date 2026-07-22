@@ -2,6 +2,8 @@
 .env
 *.key
 secrets.json
+gphotos_client_secret.json
+.gphotos_token.json
 
 # Machine-local tool state (contains local paths, not meant to be shared)
 .claude/
