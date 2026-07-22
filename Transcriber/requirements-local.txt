@@ -1,0 +1,28 @@
+# Local (CPU) meeting transcriber — meeting_transcriber_local.ipynb
+#
+#   pip install -r requirements-local.txt
+#
+# System requirement: ffmpeg on PATH  →  winget install Gyan.FFmpeg
+# Optional: exiftool  →  winget install OliverBetz.ExifTool   (GPS metadata layer 3)
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+faster-whisper>=1.0          # CTranslate2 Whisper; int8 on CPU
+mutagen>=1.47                # metadata layer 2
+numpy>=1.24
+
+# NOTE: faster-whisper depends on `av` (PyAV), which Smart App Control blocks on
+# this machine. local_transcriber/audio.py stubs it out and decodes via ffmpeg,
+# so the blocked DLL is never loaded. Leave the dependency installed — it just
+# isn't used.
+
+# ── Speaker diarization (optional, ~2.5 GB) ───────────────────────────────────
+# Install torch from the CPU index first, or pip pulls the CUDA build:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install pyannote.audio
+#
+# Then set HF_TOKEN in .env and accept BOTH licences:
+#   https://huggingface.co/pyannote/speaker-diarization-3.1
+#   https://huggingface.co/pyannote/segmentation-3.0
+
+# ── Optional conveniences ─────────────────────────────────────────────────────
+pandas>=2.0                  # CSV preview in the notebook
