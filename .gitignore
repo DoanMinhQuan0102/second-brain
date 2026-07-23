@@ -7,6 +7,8 @@ gphotos_client_secret.json
 
 # Machine-local tool state (contains local paths, not meant to be shared)
 .claude/
+hf_cache/
+_model_cache/
 
 # Large binaries that live on Drive, not in git
 *.zip
