@@ -44,3 +44,7 @@ processed/*.html
 *.jsonl
 *.sqlite
 *.npy
+
+# Portal (Firebase) secrets
+firebase_admin_key.json
+.portal_sync_state.json
