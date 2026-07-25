@@ -48,3 +48,6 @@ processed/*.html
 # Portal (Firebase) secrets
 firebase_admin_key.json
 .portal_sync_state.json
+
+# Generated at deploy time from ResearchTrail/research_trail/console.html
+Portal/webapp/research.html
