@@ -58,3 +58,6 @@ Portal/webapp/demo.html
 projects rawdata/
 *.m4a
 *.mp3
+
+# Third-party source cloned for reading (google-colab-cli). Not our code.
+_vendor/
