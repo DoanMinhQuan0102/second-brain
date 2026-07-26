@@ -52,3 +52,9 @@ firebase_admin_key.json
 # Generated at deploy time from ResearchTrail/research_trail/console.html
 Portal/webapp/research.html
 Portal/webapp/demo.html
+
+# Raw consumer-research drops staged outside vault/ — interview recordings
+# carry respondents' real names and voices. Same rule as vault/: never git.
+projects rawdata/
+*.m4a
+*.mp3
