@@ -51,3 +51,4 @@ firebase_admin_key.json
 
 # Generated at deploy time from ResearchTrail/research_trail/console.html
 Portal/webapp/research.html
+Portal/webapp/demo.html
